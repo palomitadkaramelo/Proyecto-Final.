@@ -38,4 +38,41 @@ void LV (int V[100][3], int C[10])
   LV[oyente][2]=c3
 
   C[c1]= C[c1]+3
+  C[c2]= C[c2]+2
+  C[c3]= C[c3]+3
+
+  oyente++
+  }
+}
+
+void CV (int C [10]);
+{
+  int indice, mayor1=0, mayor2=0;
+  int primeracancion=0, segundacancion=0;
+
+  printf("====RESULTADOS====\n");
+  for(indice=0; indice<=9; indice++);
+{
+  printf("Cancion %d: %d votos\n", indice, C[indice]);
+
+  if( C[indice]> mayor1)
+  {
+    mayor2= mayor1;
+    segundacancion+primeracancion;
+
+    mayor1=C[indice]
+    priemracancion=indice;
+  }
+  else
+  {
+    if(C[indice]> mayor2)
+    {
+      mayor2=C[indice];
+      segundacancion=indice;
+    }
+  }
+}
+printf(" Primer lugar, cancion: %d \n", primeracancion);
+printf(" Segundo lugar, cancion: %d \n", segundacancion);
+}
     
